@@ -1,607 +1,504 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width">
+    <title>Scott Hallock</title>
+  </head>
 
-  <title>Scott Hallock</title>
-</head>
+  <body>
+    <!--
+      I am fully aware that external styles are considered best practice. In the
+      case of my resume, I am enforcing a hard requirement that the project
+      never grow beyond a single file.  The intent is to keep the resume both
+      brief and portable.  Given this requirement, use of the style element
+      directly within the main HTML file is, I think, defensible.
+    -->
+    <style>
+      div.responsibilities {
+        padding: 0;
+        margin: 0 0 0 2%;
+      }
 
-<body>
+      div.role {
+        padding: 0;
+        margin: 0;
+      }
 
-  <center>
-    <h3>Scott Hallock</h3>
-    <h4>
-      3614 Clover Creek Lane<br>
-      Longmont, CO 80503<br>
-      720-323-6695<br>
-      <a href="mailto:scott@hallocks.net">scott@hallocks.net</a><br>
-    </h4>
-  </center>
+      header {
+        text-align: center;
+      }
 
-  <h4>Experience</h4>
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td valign="top" width="20%">
-        7/18 - 10/23
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Engineering Manager</strong>,
-              <a href="http://www.google.com/about/company/">
-                Google</a>,
-              Boulder, Colorado
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Build and manage a team of software engineers, technical leads,
-                  and managers building the next generation of asynchronous and
-                  batch processing systems for Google Drive.
-                </li>
-                <li>
-                  Design, implement, and operate Java-based software systems
-                  running on Google infrastructure that handle all processing
-                  needs for Google Drive that are not directly in the serving
-                  path.
-                </li>
-                <li>
-                  Coach software engineers, technical leads, and managers, helping
-                  them to increase their spheres of influence within Google.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" width="20%">
-        11/16 - 7/18
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Software Development Manager</strong>,
-              <a href="https://aws.amazon.com/contact-us/">
-                Amazon Web Services</a>,
-              Denver, Colorado
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Build a new predictive analytics team at a new AWS development
-                  center in Denver, Colorado by recruiting, interviewing, and
-                  hiring Software Development Engineers and Research Scientists.
-                </li>
-                <li>
-                  Establish a culture of technical and operational excellence
-                  through formal training, informal coaching, design reviews, and
-                  code reviews.
-                </li>
-                <li>
-                  Design, implement, and operate a predictive analytics platform
-                  on EC2, AWS Lambda, EMR, SNS, SQS, Kinesis, and S3.
-                </li>
-                <li>
-                  Using techniques such as random forest and binary logistic
-                  regression, train machine learning models to predict AWS network
-                  failures in advance of customer impact.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" width="20%">
-        11/15 - 11/16
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Software Engineer</strong>,
-              <a href="http://www.google.com/about/company/">
-                Google, Inc.</a>,
-              Boulder, Colorado
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Design and develop Google's billing and payment system, a
-                  Java software stack for processing global customer invoice
-                  payments and P2P payments using Google's production infrastructure.
-                </li>
-                <li>
-                  Design, implement, and test software for processing bank statements
-                  in MT940 and BAIv2 formats, properly classifying statement lines
-                  based on incomplete and often incorrect payment descriptions.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" width="20%">
-        2/15 - 11/15
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Site Reliability Manager</strong>,
-              <a href="http://www.google.com/about/company/">
-                Google, Inc.</a>,
-              New York, New York
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Maintain production readiness for Google's internal production
-                  monitoring systems, internal production rate limiting systems,
-                  <a href="https://cloud.google.com/pubsub/">
-                    Cloud Pub/Sub product</a>, and
-                  <a href="https://cloud.google.com/compute/docs/autoscaler/">
-                    Cloud Autoscaler product</a>
-                  by automating software rollouts, automating the monitoring and
-                  management of machine resources, handling and automating cluster
-                  turnups and turndowns, debugging and providing fixes for
-                  production software errors, and providing production oncall
-                  support.
-                </li>
-                <li>
-                  Improve user isolation of Google's internal production monitoring
-                  system by integrating with Google's internal rate limiting system.
-                </li>
-                <li>
-                  Represent product users with development and product management
-                  teams when determining launch readiness of the Cloud Pub/Sub product.
-                </li>
-                <li>
-                  Manage a team of eight engineers, overseeing their career development
-                  and performance management.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" width="20%">
-        9/09 - 1/15
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Senior Staff Engineer/Manager</strong>,
-              <a href="http://www.quicinc.com/">
-                Qualcomm Innovation Center, Inc.</a>,
-              Boulder, Colorado
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Lead a team of three overseeing the integration of QuIC, Inc.
-                  open source features and code into the
-                  <a href="http://www.maemo.org">Maemo</a>,
-                  <a href="http://www.meego.com">MeeGo</a>,
-                  WebOS, and
-                  <a href="https://developer.amazon.com/appsandservices/solutions/platforms/android-fireos">
-                    Fire OS</a>, and
-                  <a href="http://openwrt.org">OpenWRT</a>
-                  operating systems.
-                </li>
-                <li>
-                  Lead a team of two implementing a Python-based system for measuring
-                  software product code maturity using
-                  <a href="http://source.android.com/source/using-repo.html">repo</a>,
-                  <a href="http://git-scm.com">git</a>, and
-                  <a href="https://code.google.com/p/gerrit/">Gerrit</a>
-                  to measure week-over-week differences in lines of code changed.
-                </li>
-                <li>
-                  Serve as Architect for QuIC, Inc's Continuous Integration and
-                  Release systems, overseeing scale increase by a factor of 75,
-                  designing and coordinating new features in
-                  <a href="https://code.google.com/p/gerrit/">Gerrit</a>-based
-                  developer workflow and Electric-Commander-based integration,
-                  verification, and release automation systems to support
-                  change propagation, verification, and release across more than
-                  100 actively developed Linux Operating System codelines.
-                </li>
-                <li>
-                  Expand reach of QuIC Linux verification and release processes
-                  to other Qualcomm subsidiaries, creating a unified open source
-                  mobile operating system release process spanning several
-                  business organizations.
-                </li>
-                <li>
-                  Rearchitect QuIC, Inc's <a href="http://code.google.com/android">
-                    Android</a> software release process to allow for more rapid
-                  collaboration with handset OEMs.
-                </li>
-                <li>
-                  Found and lead the QuIC Linux DevOps team, establishing charter
-                  and vision for the team, and career track and promotion
-                  guidelines for Linux DevOps engineers. Integrate the new team
-                  with QuIC Linux release management team and with QuIC Information
-                  Technology teams.
-                </li>
-                <li>
-                  Manage a team of five engineers, overseeing their career
-                  development and performance management.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" width="20%">
-        8/07 - 9/09
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Senior Developer</strong>,
-              <a href="http://www.fidelus.com/">
-                Fidelus Technologies</a>,
-              New York, New York
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Design, implement, test, and maintain a
-                  large scale, enterprise telephone hotelling system
-                  for 33,000 simultaneous users using a Windows service
-                  implemented in C#, a web service written in
-                  ASP.NET, and a storage backend consisting of Microsoft
-                  SQL Server.
-                </li>
-                <li>
-                  Design and implement enterprise
-                  integration solutions for Cisco Unified IP
-                  Phones using the Cisco Unified Application
-                  Environment as well as using Apache, MySQL,
-                  and PHP.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" width="20%">
-        10/06 - 7/07
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Senior Software Engineer</strong>,
-              <a href="http://www.solekai.com/">
-                Solekai Systems</a>,
-              Boulder, Colorado
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Define an architecture for a next-generation, two-way,
-                  digital cable television tuner for Windows Vista PCs
-                  with Windows Media Center.
-                </li>
-                <li>
-                  Participate in cable industry standards bodies and
-                  develop industry wide consensus for the two-way, PC,
-                  digital cable television tuner.
-                </li>
-                <li>
-                  Implement a UPnP network stack in an embedded Linux
-                  environment. Implement a series of UPnP services that
-                  enable delivery of premium cable television content to
-                  a Windows Vista PC.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" width="20%">
-        7/03 - 7/06
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Firmware Engineering Manager</strong>,
-              Digeo, Longmont, Colorado
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Manage a team of 4-6 firmware engineers and testers
-                  tasked with designing and implementing DOCSIS 2.0
-                  compliant embedded cable modem MAC, IP, and management
-                  firmware.
-                </li>
-                <li>
-                  Manage relationships with DOCSIS testing laboratories
-                  to facilitate the eventual certification of Digeo's
-                  embedded cable modem implementation.
-                </li>
-                <li>
-                  Design and implement low level system software for
-                  the initial bringup of a new, embedded,
-                  system-on-chip ASIC containing three MIPS-derived
-                  processor cores.
-                </li>
-                <li>
-                  Design, implement, and test a complete, DOCSIS compliant,
-                  cable modem firmware implementation from the MAC layer
-                  through the IP layer.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" width="20%">
-        9/00 - 4/03
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Software Engineer</strong>,
-              <a href="http://www.cisco.com/">
-                Cisco Systems</a>,
-              Boulder, Colorado
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Maintain a Virtual Private Networking (VPN)
-                  client, including kernel mode
-                  IPSec drivers,
-                  a user mode Internet Key Exchange (IKE) implementation,
-                  and a Qt graphical user interface on Linux, Windows, and
-                  Mac OS X.
-                </li>
-                <li>
-                  Maintain an embedded VPN codebase
-                  using a GNU GCC-based embedded toolchain.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" width="20%">
-        1/00 - 9/00
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Software Engineer</strong>,
-              Evoke Communications, Louisville, Colorado
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Design, implement, and test a UNIX-based network
-                  server program, written in C++, for a voice over IP
-                  web chat system,
-                  using industry standard protocols
-                  and codecs (e.g. SIP, H.323, G.723).
-                </li>
-                <li>
-                  Maintain a Netscape plugin and an Internet Explorer
-                  ActiveX control for
-                  the client side of the
-                  web chat application including work on the
-                  GUI, network transport layer, and sound card
-                  interface layer.
-                </li>
-                <li>
-                  Install and administer a large number of computers
-                  running Red Hat Linux 6.1 to host the server side
-                  of the web chat application.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" width="20%">
-        7/99 - 1/00
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Senior Consultant</strong>,
-              Component Development Organization, BEA Systems, Boulder, Colorado
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Design, implement, and test complete e-commerce
-                  solutions for Fortune 50 corporations using Java, WebLogic
-                  Server, and Enterprise JavaBeans.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" width="20%">
-        9/97 - 5/99
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Software Design Engineer</strong>,
-              Windows User Experience Team,
-              <a href="http://www.microsoft.com/">
-                Microsoft Corporation</a>,
-              Redmond, Washington
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Maintain the Windows 98 and Windows 2000 Shell, a large
-                  and rapidly evolving, COM and C++ based, multiplatform,
-                  multithreaded, graphical front end for the Microsoft
-                  Windows series of operating systems.
-                </li>
-                <li>
-                  Design, implement, and maintain new features for the
-                  Windows 2000 Shell in C, C++, ATL, and DHTML/JavaScript.
-                </li>
-                <li>
-                  Maintain several older, C-based Control Panel applets for
-                  the Windows 98 and Windows 2000 products.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        1/95 - 9/97
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <strong>Software Design Engineer</strong>,
-              RPC Test Group,
-              <a href="http://www.microsoft.com/">
-                Microsoft Corporation</a>,
-              Redmond, Washington
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Coordinate the actions of a three-member team to verify the
-                  quality of Microsoft's MIDL compiler.
-                </li>
-                <li>
-                  Maintain a large and evolving base of DCE RPC functional
-                  test code written in C and C++.
-                </li>
-                <li>
-                  Coordinate and administer the regular compilation and
-                  execution of a large number (approximately 20,000) of RPC
-                  client/server tests.
-                </li>
-                <li>
-                  Design, implement, and execute a test plan to verify the
-                  quality of MIDL-generated COM object interface marshaling
-                  code.
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+      table {
+        border: 0;
+        border-collapse: collapse;
+        width: 100%;
+      }
 
-  <h4>Education</h4>
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td valign="top" width="20%">
-        1990-1994
-      </td>
-      <td>
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td colspan="2">
-              <a href="http://www.colorado.edu/">University of Colorado</a>,
-              Boulder, Colorado
-            </td>
-          </tr>
-          <tr>
-            <td width="2%"></td>
-            <td>
-              <ul type="circle">
-                <li>
-                  Bachelor of Science Degree in Electrical and Computer Engineering
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
+      td {
+        padding: 0;
+      }
 
+      td.duration {
+        vertical-align: top;
+        width: 20%;
+      }
+    </style>
+
+    <header>
+      <h3>Scott Hallock</h3>
+      <h4>
+        3614 Clover Creek Lane<br />
+        Longmont, CO 80503<br />
+        720-323-6695<br />
+        <a href="mailto:scott@hallocks.net">scott@hallocks.net</a><br />
+      </h4>
+    </header>
+
+    <h4>Experience</h4>
+    <table>
+      <tr>
+        <td class="duration">7/18 - 10/23</td>
+        <td>
+          <div class="role">
+            <strong>Engineering Manager</strong>,
+            <a href="http://www.google.com/about/company/"> Google</a>, Boulder,
+            Colorado
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Build and manage a team of software engineers, technical leads,
+                and managers building the next generation of asynchronous and
+                batch processing systems for Google Drive.
+              </li>
+              <li>
+                Design, implement, and operate Java-based software systems
+                running on Google infrastructure that handle all processing
+                needs for Google Drive that are not directly in the serving
+                path.
+              </li>
+              <li>
+                Coach software engineers, technical leads, and managers, helping
+                them to increase their spheres of influence within Google.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">11/16 - 7/18</td>
+        <td>
+          <div class="role">
+            <strong>Software Development Manager</strong>,
+            <a href="https://aws.amazon.com/contact-us/"> Amazon Web Services</a
+            >, Denver, Colorado
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Build a new predictive analytics team at a new AWS development
+                center in Denver, Colorado by recruiting, interviewing, and
+                hiring Software Development Engineers and Research Scientists.
+              </li>
+              <li>
+                Establish a culture of technical and operational excellence
+                through formal training, informal coaching, design reviews, and
+                code reviews.
+              </li>
+              <li>
+                Design, implement, and operate a predictive analytics platform
+                on EC2, AWS Lambda, EMR, SNS, SQS, Kinesis, and S3.
+              </li>
+              <li>
+                Using techniques such as random forest and binary logistic
+                regression, train machine learning models to predict AWS network
+                failures in advance of customer impact.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">11/15 - 11/16</td>
+        <td>
+          <div class="role">
+            <strong>Software Engineer</strong>,
+            <a href="http://www.google.com/about/company/"> Google</a>, Boulder,
+            Colorado
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Design and develop Google's billing and payment system, a Java
+                software stack for processing global customer invoice payments
+                and P2P payments using Google's production infrastructure.
+              </li>
+              <li>
+                Design, implement, and test software for processing bank
+                statements in MT940 and BAIv2 formats, properly classifying
+                statement lines based on incomplete and often incorrect payment
+                descriptions.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">2/15 - 11/15</td>
+        <td>
+          <div class="role">
+            <strong>Site Reliability Manager</strong>,
+            <a href="http://www.google.com/about/company/"> Google</a>, New
+            York, New York
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Maintain production readiness for Google's internal production
+                monitoring systems, internal production rate limiting systems,
+                <a href="https://cloud.google.com/pubsub/">
+                  Cloud Pub/Sub product</a
+                >, and
+                <a href="https://cloud.google.com/compute/docs/autoscaler/">
+                  Cloud Autoscaler product</a
+                >
+                by automating software rollouts, automating the monitoring and
+                management of machine resources, handling and automating cluster
+                turnups and turndowns, debugging and providing fixes for
+                production software errors, and providing production oncall
+                support.
+              </li>
+              <li>
+                Improve user isolation of Google's internal production
+                monitoring system by integrating with Google's internal rate
+                limiting system.
+              </li>
+              <li>
+                Represent product users with development and product management
+                teams when determining launch readiness of the Cloud Pub/Sub
+                product.
+              </li>
+              <li>
+                Manage a team of eight engineers, overseeing their career
+                development and performance management.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">9/09 - 1/15</td>
+        <td>
+          <div class="role">
+            <strong>Senior Staff Engineer/Manager</strong>,
+            <a href="http://www.quicinc.com/">
+              Qualcomm Innovation Center, Inc.</a
+            >, Boulder, Colorado
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Lead a team of three overseeing the integration of QuIC, Inc.
+                open source features and code into the
+                <a href="http://www.maemo.org">Maemo</a>,
+                <a href="http://www.meego.com">MeeGo</a>, WebOS, and
+                <a
+                  href="https://developer.amazon.com/appsandservices/solutions/platforms/android-fireos"
+                >
+                  Fire OS</a
+                >, and
+                <a href="http://openwrt.org">OpenWRT</a>
+                operating systems.
+              </li>
+              <li>
+                Lead a team of two implementing a Python-based system for
+                measuring software product code maturity using
+                <a href="http://source.android.com/source/using-repo.html"
+                  >repo</a
+                >, <a href="http://git-scm.com">git</a>, and
+                <a href="https://code.google.com/p/gerrit/">Gerrit</a>
+                to measure week-over-week differences in lines of code changed.
+              </li>
+              <li>
+                Serve as Architect for QuIC, Inc's Continuous Integration and
+                Release systems, overseeing scale increase by a factor of 75,
+                designing and coordinating new features in
+                <a href="https://code.google.com/p/gerrit/">Gerrit</a>-based
+                developer workflow and Electric-Commander-based integration,
+                verification, and release automation systems to support change
+                propagation, verification, and release across more than 100
+                actively developed Linux Operating System codelines.
+              </li>
+              <li>
+                Expand reach of QuIC Linux verification and release processes to
+                other Qualcomm subsidiaries, creating a unified open source
+                mobile operating system release process spanning several
+                business organizations.
+              </li>
+              <li>
+                Rearchitect QuIC, Inc's
+                <a href="http://code.google.com/android"> Android</a>
+                software release process to allow for more rapid collaboration
+                with handset OEMs.
+              </li>
+              <li>
+                Found and lead the QuIC Linux DevOps team, establishing charter
+                and vision for the team, and career track and promotion
+                guidelines for Linux DevOps engineers. Integrate the new team
+                with QuIC Linux release management team and with QuIC
+                Information Technology teams.
+              </li>
+              <li>
+                Manage a team of five engineers, overseeing their career
+                development and performance management.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">8/07 - 9/09</td>
+        <td>
+          <div class="role">
+            <strong>Senior Developer</strong>,
+            <a href="http://www.fidelus.com/"> Fidelus Technologies</a>, New
+            York, New York
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Design, implement, test, and maintain a large scale, enterprise
+                telephone hotelling system for 33,000 simultaneous users using a
+                Windows service implemented in C#, a web service written in
+                ASP.NET, and a storage backend consisting of Microsoft SQL
+                Server.
+              </li>
+              <li>
+                Design and implement enterprise integration solutions for Cisco
+                Unified IP Phones using the Cisco Unified Application
+                Environment as well as using Apache, MySQL, and PHP.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">10/06 - 7/07</td>
+        <td>
+          <div class="role">
+            <strong>Senior Software Engineer</strong>,
+            <a href="http://www.solekai.com/"> Solekai Systems</a>, Boulder,
+            Colorado
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Define an architecture for a next-generation, two-way, digital
+                cable television tuner for Windows Vista PCs with Windows Media
+                Center.
+              </li>
+              <li>
+                Participate in cable industry standards bodies and develop
+                industry wide consensus for the two-way, PC, digital cable
+                television tuner.
+              </li>
+              <li>
+                Implement a UPnP network stack in an embedded Linux environment.
+                Implement a series of UPnP services that enable delivery of
+                premium cable television content to a Windows Vista PC.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">7/03 - 7/06</td>
+        <td>
+          <div class="role">
+            <strong>Firmware Engineering Manager</strong>, Digeo, Longmont,
+            Colorado
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Manage a team of 4-6 firmware engineers and testers tasked with
+                designing and implementing DOCSIS 2.0 compliant embedded cable
+                modem MAC, IP, and management firmware.
+              </li>
+              <li>
+                Manage relationships with DOCSIS testing laboratories to
+                facilitate the eventual certification of Digeo's embedded cable
+                modem implementation.
+              </li>
+              <li>
+                Design and implement low level system software for the initial
+                bringup of a new, embedded, system-on-chip ASIC containing three
+                MIPS-derived processor cores.
+              </li>
+              <li>
+                Design, implement, and test a complete, DOCSIS compliant, cable
+                modem firmware implementation from the MAC layer through the IP
+                layer.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">9/00 - 4/03</td>
+        <td>
+          <div class="role">
+            <strong>Software Engineer</strong>,
+            <a href="http://www.cisco.com/"> Cisco Systems</a>, Boulder,
+            Colorado
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Maintain a Virtual Private Networking (VPN) client, including
+                kernel mode IPSec drivers, a user mode Internet Key Exchange
+                (IKE) implementation, and a Qt graphical user interface on
+                Linux, Windows, and Mac OS X.
+              </li>
+              <li>
+                Maintain an embedded VPN codebase using a GNU GCC-based embedded
+                toolchain.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">1/00 - 9/00</td>
+        <td>
+          <div class="role">
+            <strong>Software Engineer</strong>, Evoke Communications,
+            Louisville, Colorado
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Design, implement, and test a UNIX-based network server program,
+                written in C++, for a voice over IP web chat system, using
+                industry standard protocols and codecs (e.g. SIP, H.323, G.723).
+              </li>
+              <li>
+                Maintain a Netscape plugin and an Internet Explorer ActiveX
+                control for the client side of the web chat application
+                including work on the GUI, network transport layer, and sound
+                card interface layer.
+              </li>
+              <li>
+                Install and administer a large number of computers running Red
+                Hat Linux 6.1 to host the server side of the web chat
+                application.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">7/99 - 1/00</td>
+        <td>
+          <div class="role">
+            <strong>Senior Consultant</strong>, Component Development
+            Organization, BEA Systems, Boulder, Colorado
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Design, implement, and test complete e-commerce solutions for
+                Fortune 50 corporations using Java, WebLogic Server, and
+                Enterprise JavaBeans.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">9/97 - 5/99</td>
+        <td>
+          <div class="role">
+            <strong>Software Design Engineer</strong>, Windows User Experience
+            Team,
+            <a href="http://www.microsoft.com/"> Microsoft Corporation</a>,
+            Redmond, Washington
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Maintain the Windows 98 and Windows 2000 Shell, a large and
+                rapidly evolving, COM and C++ based, multiplatform,
+                multithreaded, graphical front end for the Microsoft Windows
+                series of operating systems.
+              </li>
+              <li>
+                Design, implement, and maintain new features for the Windows
+                2000 Shell in C, C++, ATL, and DHTML/JavaScript.
+              </li>
+              <li>
+                Maintain several older, C-based Control Panel applets for the
+                Windows 98 and Windows 2000 products.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="duration">1/95 - 9/97</td>
+        <td>
+          <div class="role">
+            <strong>Software Design Engineer</strong>, RPC Test Group,
+            <a href="http://www.microsoft.com/"> Microsoft Corporation</a>,
+            Redmond, Washington
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Coordinate the actions of a three-member team to verify the
+                quality of Microsoft's MIDL compiler.
+              </li>
+              <li>
+                Maintain a large and evolving base of DCE RPC functional test
+                code written in C and C++.
+              </li>
+              <li>
+                Coordinate and administer the regular compilation and execution
+                of a large number (approximately 20,000) of RPC client/server
+                tests.
+              </li>
+              <li>
+                Design, implement, and execute a test plan to verify the quality
+                of MIDL-generated COM object interface marshaling code.
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <h4>Education</h4>
+    <table>
+      <tr>
+        <td class="duration">1990-1994</td>
+        <td>
+          <div class="role">
+            <a href="http://www.colorado.edu/">University of Colorado</a>,
+            Boulder, Colorado
+          </div>
+          <div class="responsibilities">
+            <ul type="circle">
+              <li>
+                Bachelor of Science Degree in Electrical and Computer
+                Engineering
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
