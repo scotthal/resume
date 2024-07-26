@@ -4,10 +4,10 @@
   "description": "Scott Hallock's resume.  This really shouldn't be so hard.",
   "main": "index.js",
   "scripts": {
-    "start": "http-server"
+    "start": "serve"
   },
   "author": "Scott Hallock",
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "serve": "^14.2.3"
   }
 }
